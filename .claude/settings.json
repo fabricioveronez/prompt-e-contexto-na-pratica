@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run *)",
+      "Bash(uv sync *)",
+      "Bash(uv lock *)",
+      "Bash(uv add *)",
+      "Bash(uv remove *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)"
+    ],
+    "ask": [
+      "Edit(**/pyproject.toml)"
+    ],
+    "deny": [
+      "Bash(pip *)",
+      "Bash(pip3 *)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(virtualenv *)",
+      "Bash(conda *)",
+      "Bash(poetry *)",
+      "Bash(source *activate*)",
+      "Bash(. *activate*)",
+      "Bash(*.venv/bin/*)",
+      "Read(**/.env)",
+      "Edit(**/.env)",
+      "Edit(**/uv.lock)",
+      "Edit(**/requirements*.txt)"
+    ]
+  }
+}
